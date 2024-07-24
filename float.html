@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear </title>
+    <style>
+        .cards{
+            border: 2px solid red;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid blue;
+        }
+        /*  img float এর মানে হলো কোন লেখার সাথে সাথে রাখা ডানে হোক বা বামে হোক  */
+        img{
+            float: right;
+        }
+        /*  clear এর মানে হলো আমার আশে পাশে কাওকে না রাখা  */
+        .card:nth-child(2){
+            background-color: aqua;
+            /* clear: right; */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cards">
+        <img src="images/img (1).jpg" alt="" width="250px" height="250px">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, alias architecto rem exercitationem
+                iure molestias, vitae eum temporibus quibusdam voluptas nesciunt quas deleniti nemo necessitatibus
+                consequuntur praesentium molestiae! Ut, laborum!
+            </p>
+        </div>
+        <div class="card">Card2</div>
+        <div class="card">Card3</div>
+    </div>
+
+
+</body>
+
+</html>
